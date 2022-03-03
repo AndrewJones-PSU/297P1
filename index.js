@@ -1,8 +1,16 @@
-
 // ./index.js
 // * Imports
 const express = require("express"); // Imports Express's class definition
 const morgan = require("morgan"); // Imports Morgan's class definition
+
+// Imports from our class modules
+const Blockchain = require("./src/blockchain");
+
+// Global variables
+global.difficulty = 5; // Difficulty to mine a particular block
+global.blockchain = new Blockchain(); // Our copy of the blockchain
+global.transactions = []; // Our current transactions
+
 
 // Initialize express's class object
 const app = express();

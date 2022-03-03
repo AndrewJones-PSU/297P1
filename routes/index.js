@@ -1,4 +1,3 @@
-
 // ./routes/index.js
 // * Dynamically loads route files included in this folder.
 
